@@ -1,0 +1,17 @@
+SQL> select last_name, salary
+  2  from employees
+  3  where salary >= 12000;
+
+SQL> select last_name, department_id
+  2  from employees
+  3  where employee_id =176;
+
+SQL> select last_name, salary
+  2  from employees
+  3  where salary < 5000 or salary>12000;
+
+SQL> select last_name, employee_id, hire_date
+  2  from employees
+  3  where hire_date >= '2002/02/20'
+  4  and hire_date<='2004/08/01'
+  5  order by hire_date asc;
