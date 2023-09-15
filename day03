@@ -1,0 +1,10 @@
+select employee_id, first_name, last_name,
+  2  decode (job_id, 'AD_PRESS', 'A',
+  3  'ST_MAN','B', 'IT_PROG','C', 'SA_REP','D', 'ST_CLERK','E', '0' ) JOB_GRADE
+  4  from employees
+  5  ;
+
+select last_name
+  2  from employees
+  3  where last_name like '%a%'
+  4  or last_name like '%e%';
