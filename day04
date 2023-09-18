@@ -1,0 +1,4 @@
+select distinct job_id, department_id
+  2  from employees
+  3  where department_id in(30,90)
+  4  order by job_id;
