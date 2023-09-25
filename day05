@@ -1,0 +1,3 @@
+SQL> select employee_id, last_name, department_name, D.department_id
+  2  from employees E, departments D
+  3  where E.department_id=D.department_id;
