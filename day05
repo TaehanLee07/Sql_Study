@@ -1,3 +1,9 @@
 SQL> select employee_id, last_name, department_name, D.department_id
   2  from employees E, departments D
   3  where E.department_id=D.department_id;
+
+SQL> select last_name, hire_date
+  2  from employees
+  3  where hire_date >= (select hire_date
+  4  from employees
+  5  where last_name='Davies');
