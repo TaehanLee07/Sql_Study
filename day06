@@ -1,3 +1,6 @@
 SQL> select emp.last_name, emp.hire_date 
   from employees Emp, employees Mgr 
     where emp.manager_id=mgr.employee_id and emp.hire_date<mgr.hire_date;
+
+SQL> select max(salary), min(salary), sum(salary), round(avg(salary))
+  2  from employees;
