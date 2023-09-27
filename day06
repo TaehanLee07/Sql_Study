@@ -11,3 +11,6 @@ SQL> select job_id, count(employee_id)
 
 SQL> select count(distinct manager_id)
   2  from employees;
+
+SQL> select max(salary)-min(salary) 
+  2  from employees;
