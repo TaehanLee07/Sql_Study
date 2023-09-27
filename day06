@@ -4,3 +4,10 @@ SQL> select emp.last_name, emp.hire_date
 
 SQL> select max(salary), min(salary), sum(salary), round(avg(salary))
   2  from employees;
+
+SQL> select job_id, count(employee_id)
+  2  from employees
+  3  group by job_id;
+
+SQL> select count(distinct manager_id)
+  2  from employees;
