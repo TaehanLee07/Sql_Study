@@ -1,0 +1,9 @@
+SQL> select location_id, round(avg(salary),2), count(employee_id), department_name
+  2  from employees E, departments D
+  3  where e.department_id=d.department_id
+  4  group by department_name, location_id;
+
+SQL> select distinct(select count(employee_id)
+  2  from employees) as counta,(select count(employee_id)
+  3  from employees
+  4  where hire_date like '01%') as count2001 from employees;
