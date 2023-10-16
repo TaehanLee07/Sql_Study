@@ -1,0 +1,3 @@
+SQL> select employee_id, hire_date
+  2  from employees
+  3  where department_id in (select department_id from employees where last_name = 'Zlotkey') and last_name!='Zlotkey';
